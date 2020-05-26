@@ -1,6 +1,5 @@
-package com.example.mynewapplication;
+package com.example.mynewapplication.presentation.model;
 
-import java.security.PrivateKey;
 import java.util.List;
 
 public class RestPokemonResponse {

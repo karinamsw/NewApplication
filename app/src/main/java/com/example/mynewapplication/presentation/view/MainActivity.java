@@ -1,4 +1,4 @@
-package com.example.mynewapplication;
+package com.example.mynewapplication.presentation.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,12 +11,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.mynewapplication.R;
+import com.example.mynewapplication.data.PokeApi;
+import com.example.mynewapplication.presentation.model.Pokemon;
+import com.example.mynewapplication.presentation.model.RestPokemonResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -61,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
          if(jsonPokemon == null){
              return null;
          } else {
-             Type listType = new TypeToken<List<Pokemon>>() {}.getType();
+             Type listType = new TypeToken<List<Pokemon>>( ) {}.getType();
              return gson.fromJson(jsonPokemon, listType);
          }
 

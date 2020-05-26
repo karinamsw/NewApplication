@@ -1,4 +1,6 @@
-package com.example.mynewapplication;
+package com.example.mynewapplication.data;
+
+import com.example.mynewapplication.presentation.model.RestPokemonResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

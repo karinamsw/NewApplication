@@ -1,4 +1,4 @@
-package com.example.mynewapplication;
+package com.example.mynewapplication.presentation.view;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.mynewapplication.R;
+import com.example.mynewapplication.presentation.model.Pokemon;
 
 import java.util.List;
 
